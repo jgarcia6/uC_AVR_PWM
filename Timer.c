@@ -15,20 +15,20 @@ ISR(_vect_){
 		e insertar los silencios entre cada nota. */
 }
 
-void Timer2_Freq_Gen(uint8_t ticks){
+void Timer1_Freq_Gen(uint8_t ticks){
 	/* 	Si "ticks" es mayor que 0 entonces, inicializa y habilita el Generador 
 		de Frecuencia del Timer2 con el tope dado por "ticks".
 		De lo contrario se requiere deshabilitar el Generador, generando de 
 		esta forma el silencio (0 lógico). */
 }
 
-void Timer2_Play(const struct note song[],unsigned int len)
+void Timer1_Play(const struct note song[],unsigned int len)
 {
 	/*	Función que establece las condiciones necesarias para que
 		el generador recorra el arreglo de notas. */
 }
 
-void Timer2_Volume(int8_t direction){
+void Timer1_Volume(int8_t direction){
 	/* 	Ajusta el ciclo de trabajo para incrementar o decrementar  el volumen
 	   	de las notas que se estan generando. */
 }
