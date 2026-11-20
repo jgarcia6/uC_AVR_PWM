@@ -111,13 +111,13 @@ int main(void)
 			{
 				case 'p':
 				case 'P': // Play Song
-						Timer2_Play(ImperialMarch,sizeof(ImperialMarch)/sizeof(struct note));
+						Timer1_Play(ImperialMarch,sizeof(ImperialMarch)/sizeof(struct note));
 						break;
 				case 'V': //Increase Volume
-						Timer2_Volume(1);
+						Timer1_Volume(1);
 						break;
 				case 'v'://Decrease Volume
-						Timer2_Volume(-1);
+						Timer1_Volume(-1);
 						break;
 				/*    
 				case 'n':
